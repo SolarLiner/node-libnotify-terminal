@@ -1,0 +1,30 @@
+{
+  "name": "node-libnotify-terminal",
+  "version": "0.1.0",
+  "description": "node wrapper to libnotify-terminal",
+  "dependencies": {
+    "child-process": "^1.0.2",
+    "util": "0.10.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolarLiner/node-libnotify-terminal.git"
+  },
+  "keywords": [
+    "notifications",
+    "linux"
+  ],
+  "author": "SolarLiner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SolarLiner/node-libnotify-terminal/issues"
+  },
+  "homepage": "https://github.com/SolarLiner/node-libnotify-terminal#readme"
+}
