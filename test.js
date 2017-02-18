@@ -1,18 +1,22 @@
-var notifier = require('./');
+var LibNotify = require('./').libnotify;
 
-notifier.new({
-    title: "Test",
-    subtitle: "this is the subtitle",
-    body: "Actual body of the notification"
+var n = new LibNotify("libnotify test");
+n.set_basic({title: "Notification title", body: "Notification body", subtitle: "Subtitle"});
+n.add_action('dismiss', 'Dismiss');
+n.set_reply();
+
+n.show(function(action, message) {
+    switch (action) {
+        case 'dismiss':
+            console.log('client: action dismiss');
+            break;
+        case 'close':
+            console.log('client: notification timeout');
+            break;
+        case 'reply':
+            console.log('client: message recieved: '+message);
+        default:
+            console.log('client: action fired: '+action);
+            break;
+    }
 });
-notifier.set_reply_concealed("Ali Connors", "Hey, wanna come over?", true);
-
-notifier.onNotificationAction = function(action) {
-    console.log('Event fired: '+action);
-}
-
-notifier.onNotificationReplied = function(message) {
-    console.log("The message is: " + message);
-}
-
-notifier.fire();
