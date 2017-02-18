@@ -70,7 +70,7 @@ class LibNotify {
 
         if(args.actions) {
             args.actions.forEach(function(element) {
-                cmd.push('--action ' + element.join(','));
+                cmd.push('--action ' + inspect(element.join(',')));
             });
         }
 

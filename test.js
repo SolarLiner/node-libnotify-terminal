@@ -2,7 +2,8 @@ var LibNotify = require('./').libnotify;
 
 var n = new LibNotify("libnotify test");
 n.set_basic({title: "Notification title", body: "Notification body", subtitle: "Subtitle"});
-n.add_action('dismiss', 'Dismiss');
+n.add_action('test', 'Dismiss');
+n.add_action('lunch', 'Go to lunch!');
 n.set_reply();
 
 n.show(function(action, message) {
