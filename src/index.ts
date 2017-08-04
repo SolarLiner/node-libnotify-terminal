@@ -24,8 +24,10 @@ export class Notification {
     }
 
     /**
-     * 
-     * @param basic 
+     * Sets basic information for notifications
+     * @param basic.title Title of the notification
+     * @param basic.subtitle Subtitle of the notification
+     * @param basic.body Body of the subtitle
      */
     set_basic(basic: { title?: string, subtitle?: string, body?: string }): void {
         if (basic.title)
