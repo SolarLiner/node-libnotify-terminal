@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "node wrapper to libnotify-terminal",
   "dependencies": {
-    "childprocess": "^2.0.2",
+    "child-process-promise": "^2.2.1",
     "util": "0.10.3"
   },
   "devDependencies": {
