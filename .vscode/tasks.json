@@ -7,6 +7,20 @@
             "type": "npm",
             "script": "install",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "type": "npm",
+            "script": "build:live",
+            "problemMatcher": [
+                "$tsc-watch"
+            ]
         }
     ]
 }
