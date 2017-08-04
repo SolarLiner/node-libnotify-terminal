@@ -1,4 +1,5 @@
-export interface Action {
+///<reference path="refs.ts"/>
+interface Action {
     id: string;
     name: string;
 }
@@ -6,7 +7,7 @@ export interface Action {
 /**
  * Defines the state of application data as required by the notification handle 
  */
-export interface AppData {
+interface AppData {
     app_name: string;
     title: string;
     subtitle: string;
