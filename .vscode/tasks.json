@@ -21,6 +21,10 @@
             "problemMatcher": [
                 "$tsc-watch"
             ]
+        },
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json"
         }
     ]
 }
