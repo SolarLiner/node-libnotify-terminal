@@ -22,7 +22,7 @@ export class Notification {
         this.isReply = false;
         this.replyRecipient = null;
         this.replyMessage = null;
-        this.actions.length = 0;
+        this.actions = new Array<Action>(0);
     }
 
     /**
