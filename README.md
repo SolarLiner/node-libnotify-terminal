@@ -1,5 +1,5 @@
 # node-libnotify-terminal
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/SolarLiner/node-libnotify-terminal/master/LICENSE) ![Not yet on npm](https://img.shields.io/badge/npm-Not%20yet-yellowgreen.svg)  
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/SolarLiner/node-libnotify-terminal/master/LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/945c18de3e3b46ee9c84c0c623c9f2e9)](https://www.codacy.com/app/solarliner/node-libnotify-terminal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SolarLiner/node-libnotify-terminal&amp;utm_campaign=Badge_Grade) [![Coverage Status](https://coveralls.io/repos/github/SolarLiner/node-libnotify-terminal/badge.svg?branch=master)](https://coveralls.io/github/SolarLiner/node-libnotify-terminal?branch=master) [![Build Status](https://travis-ci.org/SolarLiner/node-libnotify-terminal.svg?branch=master)](https://travis-ci.org/SolarLiner/node-libnotify-terminal) ![Not yet on npm](https://img.shields.io/badge/npm-Not%20yet-yellowgreen.svg)  
 libnotify-terminal, ported to nodejs.
 
 ## What is libnotify-terminal ?
