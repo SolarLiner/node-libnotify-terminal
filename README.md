@@ -15,4 +15,12 @@ libnotify-terminal, ported to nodejs.
 
 ## How simple is it?
 
-That will be discussed once I actually come around and type some code.
+Firing a simple notification, without callbacks, is as simple as this:
+```typescript
+import { Notification } from "node-libnotify-terminal";
+Notification.fire("Application title", "Notification body", "Notification title");
+```
+
+Note that the body is before the title, as only the body is required to fire a notification.
+
+More examples are available on the Wiki.
