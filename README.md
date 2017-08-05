@@ -1,4 +1,5 @@
 # node-libnotify-terminal
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/SolarLiner/node-libnotify-terminal/master/LICENSE) ![Not yet on npm](https://img.shields.io/badge/npm-Not%20yet-yellowgreen.svg)
 libnotify-terminal, ported to nodejs.
 
 ## What is libnotify-terminal ?
