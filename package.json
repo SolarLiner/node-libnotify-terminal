@@ -11,8 +11,10 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.19",
     "chai": "^4.1.0",
+    "coveralls": "^2.13.1",
     "mocha": "^3.5.0",
     "nodemon": "^1.11.0",
+    "nyc": "^11.1.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.4.2"
   },
@@ -22,7 +24,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "mocha tests/*",
+    "test": "./node_modules/.bin/nyc --reporter=html --reporter=text mocha tests/*",
+    "coverage": "./node_modules.bin/nyc report --repoter=text-lcov | ./node_modues/.bin/coveralls",
     "build": "tsc",
     "build:live": "tsc --watch",
     "clean": "rm ./lib/*",
@@ -41,5 +44,17 @@
   "bugs": {
     "url": "https://github.com/SolarLiner/node-libnotify-terminal/issues"
   },
-  "homepage": "https://github.com/SolarLiner/node-libnotify-terminal#readme"
+  "homepage": "https://github.com/SolarLiner/node-libnotify-terminal#readme",
+  "nyc": {
+    "extension": [
+      "*.ts",
+      "*.tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "require": [
+      "ts-node/require"
+    ]
+  }
 }
