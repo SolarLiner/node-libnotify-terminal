@@ -1,19 +1,19 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        // "outDir": "./lib/",
-        "outFile": "./lib/index.js",
-        "module": "amd",
+        "outDir": "./lib/",
+        // "outFile": "./lib/index.js",
+        "module": "es6",
         "moduleResolution": "Node",
         "declaration": true,
         "allowJs": false,
-        "target": "es5",
+        "target": "es2015",
         "noImplicitReturns": true,
         "noResolve": true,
         "inlineSourceMap": true
         // "noImplicitAny": true
     },
     "include": [
-        "./src/index.ts"
+        "./src/*"
     ]
 }

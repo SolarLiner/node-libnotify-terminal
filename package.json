@@ -22,7 +22,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "mocha -r ts-node/register ./tests/**/index.ts",
+    "test": "mocha tests/*",
     "build": "tsc",
     "build:live": "tsc --watch",
     "clean": "rm ./lib/*",
