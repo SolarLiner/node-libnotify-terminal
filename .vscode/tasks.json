@@ -30,6 +30,11 @@
             "type": "npm",
             "script": "clean",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "test",
+            "problemMatcher": []
         }
     ]
 }
