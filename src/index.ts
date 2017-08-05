@@ -72,7 +72,7 @@ export class Notification {
         this.replyRecipient = null;
         this.replyMessage = null;
     }
-    set_message(message: string): void {
+    set_reply_message(message: string): void {
         if(!this.isReply)
             throw "Should set notification as reply before setting message";
             
