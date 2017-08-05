@@ -11,6 +11,7 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.19",
     "chai": "^4.1.0",
+    "codacy-coverage": "^2.0.2",
     "coveralls": "^2.13.1",
     "mocha": "^3.5.0",
     "nodemon": "^1.11.0",
@@ -26,6 +27,7 @@
   "scripts": {
     "test": "./node_modules/.bin/nyc --reporter=html --reporter=text mocha tests/*",
     "coverage": "./node_modules.bin/nyc report --repoter=text-lcov | ./node_modues/.bin/coveralls",
+    "coverage:codacy": "istanbul cover ./node_modules/mocha/bin/_mocha tests/* --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
     "build": "tsc",
     "build:live": "tsc --watch",
     "clean": "rm ./lib/*",
