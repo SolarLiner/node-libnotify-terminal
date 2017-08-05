@@ -25,6 +25,11 @@
         {
             "type": "typescript",
             "tsconfig": "tsconfig.json"
+        },
+        {
+            "type": "npm",
+            "script": "clean",
+            "problemMatcher": []
         }
     ]
 }
