@@ -1,4 +1,3 @@
-/// <reference path="refs.ts"/>
 import { exec } from "child-process-promise";
 import { inspect } from "util";
 
