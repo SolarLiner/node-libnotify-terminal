@@ -3,11 +3,11 @@
     "compilerOptions": {
         "outDir": "./lib/",
         // "outFile": "./lib/index.js",
-        "module": "es6",
+        // "module": "none",
         "moduleResolution": "Node",
         "declaration": true,
         "allowJs": false,
-        "target": "es2015",
+        "target": "es3",
         "noImplicitReturns": true,
         "noResolve": true,
         "inlineSourceMap": true
