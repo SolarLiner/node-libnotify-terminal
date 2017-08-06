@@ -56,7 +56,6 @@
       "**/*.d.ts"
     ],
     "require": [
-      // "ts-node/require"
     ]
   }
 }
