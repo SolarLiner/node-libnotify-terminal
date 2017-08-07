@@ -98,11 +98,11 @@ export class Notification {
                 let action = this.actions.filter((a) => {return a.id === out});
                 if(action.length > 0){
                     console.log(`Action fired: ${action[0].id}`);
-                    resolve(action[0]);
+                    resolve({'action': action[0]});
                 }
                 else if(out.length>0) {
                     console.log(`Got reply: ${out}`);
-                    resolve(out);
+                    resolve({'message': out});
                 }
                 else {
                     console.log('Notification closed');
