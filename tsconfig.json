@@ -7,7 +7,7 @@
         "moduleResolution": "Node",
         "declaration": true,
         "allowJs": false,
-        "target": "es3",
+        "target": "es2015",
         "noImplicitReturns": true,
         "noResolve": true,
         "inlineSourceMap": true
