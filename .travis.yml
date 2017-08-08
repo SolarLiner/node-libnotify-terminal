@@ -2,6 +2,7 @@ dist: xenial
 language: nodejs
 nodejs: '8'
 
+before_instal: npm set registry https://registry.npmjs.org/
 install: npm install
 before_script: npm run build
 script: npm run test:codacy
