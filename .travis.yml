@@ -2,7 +2,9 @@ dist: xenial
 language: node_js
 nodejs: '8'
 
-before_install: npm set repository "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN"
+before_install: 
+  - npm set repository "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN"
+  - npm install -g typescript mocha chai
 install: npm install
 before_script: npm run build
 script: npm run test:codacy
