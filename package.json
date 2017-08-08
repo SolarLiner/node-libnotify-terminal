@@ -28,5 +28,14 @@
   "dependencies": {
     "child-process-promise": "^2.2.1",
     "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.19",
+    "babel-cli": "^6.24.1",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0"
   }
 }
