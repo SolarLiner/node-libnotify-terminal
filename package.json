@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "tsc ./src/*.ts --outDir ./lib",
+    "build": "tsc",
+    "build:live": "tsc --watch",
     "test": "mocha ./lib/**/*.spec.js --compilers js:babel-core/register",
     "test:coverage": "nyc --reporter=text npm run test",
     "test:codacy": "echo \"Codacy token: $CODACY_PROJECT_TOKEN\" && nyc --reporter=text-lcov --reporter=html npm run test | ./node_modules/.bin/codacy-coverage",
@@ -30,10 +31,12 @@
   "homepage": "https://github.com/SolarLiner/node-libnotify-terminal#readme",
   "dependencies": {
     "child-process-promise": "^2.2.1",
+    "es6-promise": "^4.1.1",
     "util": "^0.10.3"
   },
   "devDependencies": {
     "@types/chai": "^4.0.2",
+    "@types/es6-promise": "0.0.32",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.19",
     "babel-core": "^6.25.0",
