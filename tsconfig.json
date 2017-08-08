@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "target": "es3",
+        "listFiles": true,
+    }
+}

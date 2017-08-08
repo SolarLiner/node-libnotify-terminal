@@ -4,11 +4,14 @@
   "description": "A Node.js wrapper around libnotify-terminal, a CLI to send notifications with callback on Linux.",
   "main": "./lib/notify.js",
   "directories": {
-    "lib": "lib",
-    "test": "tests"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "mocha ./lib/**/*.spec.js"
+    "build": "tsc ./src/**/*.ts",
+    "test": "mocha ./lib/**/*.spec.js --compilers js:babel-core/register",
+    "test:coverage": "nyc --reporter=text npm run test",
+    "test:codacy": "echo \"Codacy token: $CODACY_PROJECT_TOKEN\" && nyc --reporter=text-lcov --reporter=html npm run test | ./node_modules/.bin/codacy-coverage",
+    "clean": "rm ./lib/*"
   },
   "repository": {
     "type": "git",
@@ -36,6 +39,7 @@
     "babel-core": "^6.25.0",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.1",
+    "codacy-coverage": "^2.0.2",
     "mocha": "^3.5.0",
     "ts-node": "^3.3.0"
   }
