@@ -2,7 +2,7 @@ dist: xenial
 language: nodejs
 nodejs: '8'
 
-before_install: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" > .npmrc
+before_install: npm set repository "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN"
 install: npm install
 before_script: npm run build
 script: npm run test:codacy
