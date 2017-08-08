@@ -80,7 +80,8 @@ export class Notification {
 
     show(): Promise<{action?: Action, message?: string}> {
         return new Promise((resolve, reject) => {
-            let cmd = ['../bin/libnotify-terminal'];
+            const cli_path = `${__dirname}/bin/libnotify-terminal`
+            let cmd = ['bin/libnotify-terminal'];
             if(this.app_name) cmd.push(`--app-title "${this.app_name}"`);
             if(this.title) cmd.push(`--title "${this.title}"`);
             if(this.subtitle) cmd.push(`--subtitle "${this.subtitle}"`);
