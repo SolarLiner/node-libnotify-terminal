@@ -61,4 +61,11 @@ describe('The Notification class', function () {
         assert.equal(n.isReply, true);
         assert.strictEqual(n.replyMessage, "New message");
     });
+    it("should fire a notification (no truly good way to test this", () => {
+        let n = new Notification('test', 'test');
+        
+        assert.doesNotThrow(() => {
+            n.show();
+        });
+    });
 });
