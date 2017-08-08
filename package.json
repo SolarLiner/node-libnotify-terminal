@@ -7,11 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "tsc ./src/**/*.ts",
+    "build": "tsc ./src/*.ts --outDir ./lib",
     "test": "mocha ./lib/**/*.spec.js --compilers js:babel-core/register",
     "test:coverage": "nyc --reporter=text npm run test",
     "test:codacy": "echo \"Codacy token: $CODACY_PROJECT_TOKEN\" && nyc --reporter=text-lcov --reporter=html npm run test | ./node_modules/.bin/codacy-coverage",
-    "clean": "rm ./lib/*"
+    "clean": "rm ./lib/* ./.nyc_output/* && rmdir ./.nyc_output"
   },
   "repository": {
     "type": "git",
