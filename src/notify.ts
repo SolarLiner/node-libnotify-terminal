@@ -111,7 +111,7 @@ export class Notification {
             }).catch((err: Error) => {
                 console.log(`Error: ${err.message}`);
                 reject(err);
-            })
+            });
         });
     }
 }
