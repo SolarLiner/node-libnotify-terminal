@@ -1,14 +1,8 @@
-language: node_js
-sudo: false
 dist: xenial
+language: nodejs
+nodejs: '8'
 
-node_js: '8'
-
-# before_install: npm run clean
+before_install: npm set repository "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN"
 install: npm install
-script:
-  - npm run build
-  - npm run test
-after_success: 
-  - npm run coverage
-  - npm run coverage:codacy
+before_script: npm run build
+script: npm run test:codacy

@@ -1,19 +1,7 @@
 {
-    "compileOnSave": true,
     "compilerOptions": {
-        "outDir": "./lib/",
-        // "outFile": "./lib/index.js",
-        // "module": "none",
-        "moduleResolution": "Node",
-        "declaration": true,
-        "allowJs": false,
+        "outDir": "./lib",
         "target": "es3",
-        "noImplicitReturns": true,
-        "noResolve": true,
-        "inlineSourceMap": true
-        // "noImplicitAny": true
-    },
-    "include": [
-        "./src/*"
-    ]
+        "listFiles": true,
+    }
 }
