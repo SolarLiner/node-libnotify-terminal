@@ -108,7 +108,7 @@ export class Notification {
                     console.log('Notification closed');
                     resolve(null);
                 }
-            }).catch((err: Error) => {
+            }, (err: Error) => {
                 console.log(`Error: ${err.message}`);
                 reject(err);
             });
